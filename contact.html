@@ -2,13 +2,15 @@
 <html lang="en-us">
 <head>
     <meta charset="UTF-8">
+    <!--lines 6-7 meta were a collaboration-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Eliza Irwin</title>
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    <title>Contact Me</title>
+    
 </head>
 <body>
-<div id="master">
+<div id="root">
     <header>
         <h1>Eliza Irwin</h1>
         <nav>
@@ -20,27 +22,28 @@
         <header>
             <h2>Contact</h2>
         </header>
-        <div class="container">
-            <div style="text-align-last: center"></div>
-            <div class="row"></div>
-            <div class="column"></div>
-            <div class="column">
+        <div class="container"></div>
+        <div class="row"></div>
+        <div class="column"></div>
+        <!--below is how to do a form-->
+        <!--included examples in blank areas for user-->
+        <!--action_page.php is where the form will pull from-->
         <form action="/action_page.php">
-            First name:<br>
-            <input type="text" name="Name" value="">
+        <!--included sizes for Name and Email to make the boxes fit the page-->
+            Name:<br>
+            <input type="text" name="Name" value="Jane Doe" size="119">
             <br>
-            Last name:<br>
-            <input type="text" name="Email" value="Example@gmail.com">
+            Email:<br>
+            <input type="text" name="Email" value="Example@gmail.com" size="119"> 
             <br>
             Message:<br>
-            <textarea rows="10" cols="30"></textarea>
+        <!--adjusted cols for Message to make the box fit the page-->
+            <textarea rows="10" cols="118">Your Message Here!</textarea>
             <br>
             <input type="submit" value="Submit">
           </form> 
-          </div>
-          </div>
-    </article>
+        </article>
 </main>
-<footer>Copyright©</footer>
+<footer><p>Copyright© 2019</p></footer>
 </body>
 </html>
