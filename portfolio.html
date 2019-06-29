@@ -1,36 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-us">
 <head>
-    <meta charset="UTF-8">
-    <!--lines 6-7 meta were a collaboration-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Portfolio</title>
-    <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/style.css">
+	<meta charset="UTF-8">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<meta content="ie=edge" http-equiv="X-UA-Compatible">
+	<title>Boostrap Portfolio</title><!--Made sure to put Boostrap CSS before my style sheet-->
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+	<link href="assets/css/style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-    <div id="root">
-    <header>
-        <h1>Eliza Irwin</h1>
-        <nav>
-            <ul><li><a href="index.html">About</a></li><li><a href="./portfolio.html">Portfolio</a></li><li><a href="./contact.html">Contact</a></li></ul>
-        </nav>
-    </header>
-    <main>
-        <article>
-            <header>
-            <h2>Portfolio</h2>
-            </header>
-            <section id="projects">
-                    <div class="eliza a"><h2>Placeholder</h2></div>
-                    <div class="eliza b"><h2>Placeholder</h2></div>
-                    <div class="eliza c"><h2>Placeholder</h2></div>
-                    <div class="eliza d"><h2>Placeholder</h2></div>
-                    <div class="eliza e"><h2>Placeholder</h2></div>
-            </section>
-        </article>
-    </main>
-    <footer><p>Copyright© 2019</p></footer>
-    </div>
+	<!--navbar goes before container-->
+	<div id="MainNav">
+		<div class="MainTwo">
+			<nav class="navbar navbar-expand-lg p-0">
+				<!--brand will be the prominent part of the nav-->
+                <a class="navbar-brand p-3" href="#" id="TotalBackground"><strong>Eliza Irwin</strong></a> 
+                <button aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle" class="navbar-toggler" data-target="#navbarNav" data-toggle="collapse" type="button">
+                <span class="navbar-toggler-icon"></span></button>
+				<div class="navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+						<li class="nav-item">
+							<a class="nav-link" href="index.html">About</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link border-left" href="Portfolio.html">Portfolio</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link border-left" href="Contact.html">Contact</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+	</div>
+	<div class="container MainTwo">
+		<div class="row">
+			<div class="col-md-12">
+				<h1 class="m-4 pb-3"><strong>Portfolio</strong></h1>
+			</div>
+		</div>
+		<div class="row"></div>
+		<div class="col-md-12">
+			<div class="d-sm-flex flex-wrap m-3">
+				<div class="eliza a">
+					<h2>Placeholder</h2>
+				</div>
+				<div class="eliza b">
+					<h2>Placeholder</h2>
+				</div>
+				<div class="eliza c">
+					<h2>Placeholder</h2>
+				</div>
+				<div class="eliza d">
+					<h2>Placeholder</h2>
+				</div>
+				<div class="eliza e">
+					<h2>Placeholder</h2>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer>
+		<p>Copyright© 2019</p>
+	</footer>
 </body>
 </html>

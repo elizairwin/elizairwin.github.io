@@ -1,33 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-us">
 <head>
-    <meta charset="UTF-8">
-    <!--lines 6-7 meta were a collaboration-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
-    <title>About Me</title>
+	<meta charset="UTF-8">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<meta content="ie=edge" http-equiv="X-UA-Compatible">
+	<title>Boostrap Portfolio</title><!--Made sure to put Boostrap CSS before my style sheet-->
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet"><!--My style sheet-->
+	<link href="assets/css/style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-<div id="root">
-    <header>
-        <h1>Eliza Irwin</h1>
-        <nav>
-            <ul><li><a href="index.html">About</a></li><li><a href="./portfolio.html">Portfolio</a></li><li><a href="./contact.html">Contact</a></li></ul>
-        </nav>
-    </header>
-    <main>
-        <article>
-            <header>
-                <h2 class="about">About Me</h2>
-            </header>
-                <img src="assets/images/eliza.jpeg" alt="Eliza" width="100" height="200">
-                <p>Hi! I’m Eliza! I’m originally from Columbus, Ohio (Go Bucks!). I have one sister named Elle and a fur baby nephew named Archie - they live in LA. My parents live in Florida, so I get to visit the beach when I go home!</p><br>
-                <p>I've lived in Boston for four years and have worked as an e-commerce buyer in textiles and children’s apparel, along with working in retail and home decor. I’m also a freelance artist specializing in watercolor painting. </p><br>
-                <p>In my free time, I like to spin, enjoy the outdoors, play Nintendo Switch, and listen to Podcasts (always looking for new recommendations!).</p><br>
-        </article>
-    </main>
-</div>
-    <footer><p>Copyright© 2019</p></footer>
+	<!--navbar goes before container-->
+	<div id="MainNav">
+		<div class="MainTwo">
+			<nav class="navbar navbar-expand-lg p-0">
+				<!--brand will be the prominent part of the nav-->
+        <a class="navbar-brand p-3" href="#" id="TotalBackground"><strong>Eliza Irwin</strong></a> 
+        <button aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle" class="navbar-toggler" data-target="#navbarNav" data-toggle="collapse" type="button">
+        <span class="navbar-toggler-icon"></span></button>
+				<div class="navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+						<li class="nav-item">
+							<a class="nav-link" href="index.html">About</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link border-left" href="Portfolio.html">Portfolio</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link border-left" href="Contact.html">Contact</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+	</div><!--all we need is one row and column since we already have a nav-->
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<!--have to add some spacing for About Me-->
+				<h1 class="m-4 pb-3"><strong>About Me</strong></h1><!--have to add some spacing for iimage and make it responsive-->
+				<img alt="Eliza" class="float-left mx-2 mb-2 img-fluid" id="Eliza" src="assets/images/eliza.jpeg">
+				<p>Hi! I’m Eliza! I’m originally from Columbus, Ohio (Go Bucks!). I have one sister named Elle and a fur baby nephew named Archie - they live in LA. My parents live in Florida, so I get to visit the beach when I go home!</p><br>
+				<p>I've lived in Boston for four years and have worked as an e-commerce buyer in textiles and children’s apparel, along with working in retail and home decor. I’m also a freelance artist specializing in watercolor painting.</p><br>
+				<p>In my free time, I like to spin, enjoy the outdoors, play Nintendo Switch, and listen to Podcasts (always looking for new recommendations!).</p><br>
+			</div>
+		</div>
+	</div>
+	<footer>
+		<p>Copyright© 2019</p>
+	</footer>
 </body>
 </html>
